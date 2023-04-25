@@ -2,6 +2,7 @@ import java.util.jar.Attributes
 
 fun main(){
 
+
 Multiply()
 
     println(Password("P6YN89RGBD"))
@@ -20,23 +21,26 @@ Multiply()
 //Write and invoke one function that takes in a random string and returns the
 //following values: first character, last character, length of the string and
 //whether it begins with a vowel or not.
-class Name(var firstChar:Char,var lastChar:Char,var length:Int,var vowel:String){
-    fun stringName(num:String):Name{
-var firstChar=num.get(0)
-        var length=num.length
-        var lastChar=num.get(-1)
-        var vowels= arrayOf("a","e","i","o","u")
-        for(v in vowels)
-        if(num.startsWith(v)) {
-            true
-        }else{
-            false
-        }
+class NamePerson(var firstChar:Char,var lastChar:Char,var length:Int,var vowel:String){
+    fun stringName(num:String):NamePerson {
+            var firstCha = num.get(0)
+            var lenth = num.length
+            var lastCha = num.get(-1)
 
-        var both=Name(firstChar,lastChar, length,vowel)
-        return both
+            var vowes = arrayOf("a", "e", "i", "o", "u")
+            for (v in vowes)
+                if (num.startsWith(v)) {
+                    true
+                } else {
+                    false
+                }
+
+            var both = NamePerson(firstChar, lastChar, length, vowel)
+            return both
+        }
     }
 }
+
 
 //2. Create a function that takes in a password as a parameter. For a password to
 //be valid it must meet the following conditions:
